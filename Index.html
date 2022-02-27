@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Style.css"/>
+    <nav id="navbar">
+      <header class="main-header"> HTML Documentation </header>
+    <ul>
+      <li> <a class="nav-link" href="#Introduction"> Introduction </a> </li>
+      <li> <a class="nav-link" href="#What_you_should_already_know"> What you should already know </a> </li>
+      <li> <a class="nav-link" href="#HTML_and_CSS"> HTML and CSS </a> </li>
+      <li> <a class="nav-link" href="#Headings"> Headings </a> </li>
+      <li> <a class="nav-link" href="#Paragraph"> Paragraph </a> </li>
+      <li> <a class="nav-link" href="#Line_Break"> Line Break </a> </li>
+      <li> <a class="nav-link" href="#Links"> Links </a> </li>
+      <li> <a class="nav-link" href="#Comments"> Comments </a> </li>
+      <li> <a class="nav-link" href="#Lists"> Lists </a> </li>
+      <li> <a class="nav-link" href="#Font_Style">Font Style </a> </li>
+      <li> <a class="nav-link" href="#Reference"> Reference </a> </li>
+   </ul>
+</nav> 
+  
+<main id="main-doc">
+<section class="main-section" id="Introduction">
+    <header class="main-header"> Introduction </header>
+    <article>
+  <p>Hello, you may be wondering "What is HTML?" well HTML, or also known as HyperText Markup Language, is the standard language for documents to be displayed in a web browser. HTML is also assisted greatly by another language, Cascading Style Sheets or CSS for short, and scripting languages such as JavaScript. </p>
+      
+  <p> HTML was first written by Tim Bernes Lee, in 1993! However it would not be published until 1995.  </p>
+    </article>
+</section>
+  
+<section class="main-section" id="What_you_should_already_know">
+    <header class="main-header">What you should already know  </header>
+    <article>
+      <p>Most of the content in this guide is presented to you, assuming you know the following.  </p>
+      <ul>
+        <li>General understanding of the internet, and the World Wide Web (WWW) </li>
+        <li>Basic understanding of how to use a computer </li>
+        <li>An internet connection </li>
+    </article>
+</section>
+  
+<section class="main-section" id="HTML_and_CSS">
+    <header class="main-header"> HTML and CSS </header>
+    <article>
+      <p> As mentioned earlier, HTML and CSS are very important, and are used together all the time. CSS simply will help you (the developer) visually design your site, and give you the tools necessary for it. This is why its recommended you learn these two languages first. </p>
+      
+      <p> For example, CSS allows you to make adjustmants to your text, for example if you don't want your text on the left, then you can simply use <code> text-align: center; </code> which will allow you to center that text </p>
+
+    </article>
+</section>
+  
+<section class="main-section" id="Headings">
+    <header class="main-header"> Headings </header>
+    <article>
+      <p>Headings are important, since they tell the browser the structure of your website. <code> &lt;h1&gt;</code> Are often used for main headings. <code>&lt;h2&gt;</code> Elements are generally used for subheadings. There are also <code> &lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;, and &lt;h6&gt; </code> which are different levels of subheadings. Example:  </p>
+      
+      <code>
+  &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+  &lt;h2&gt;Heading Level 2&lt;/h2&gt;      
+  &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+  &lt;h4&gt;Heading Level 4&lt;/h4&gt;      
+  &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+  &lt;h6&gt;Heading Level 6&lt;/h6&gt;
+    </code>
+      <p> The output: </p>
+  <code>
+    <div id="header-1"> <header class="main-header"> Heading Level 1 </header> </div>
+    <h2> Heading Level 2 </h2>
+    <h3> Heading Level 3 </h3>
+    <h4> Heading Level 4 </h4>
+    <h5> Heading Level 5 </h5>
+    <h6> Heading Level 6 </h6>  
+      </code>
+    </article>
+</section>
+    
+<section class="main-section" id="Paragraph">
+  <header class="main-header"> Paragraph </header>
+  <article>
+  <p> Paragraph elements are preferred for paragraph text on websites. Paragraph elements are created like this: </p>
+  <code>
+    &lt;p&gt; I'm a p tag! &lt;/p&gt;
+  </code>    
+  <p> The output: </p>
+   <code>   
+     <p> I'm a p tag! </p>
+  </code>  
+  </article>
+</section>
+    
+ <section class="main-section" id="Line_Break">   
+   <header class="main-header"> Line Break </header>
+    <article>
+      <p> The line break element produces a line break in the text. This can be useful for when you are writing something, such as a poem. For example: </p> 
+    <code>
+   &lt;p&gt; I &lt;br&gt; have &lt;br&gt; line &lt;br&gt; breaks. &lt;/p&gt;
+    </code>  
+      <p> The output: </p>
+      <code>
+        <p> I <br> have <br> line <br> breaks. </p>
+      </code>
+   </article>  
+</section>
+    
+<section class="main-section" id="Links">
+  <header class="main-header"> Links </header>
+  <article>
+    <p> Links are used with Anchor elements. Links can be added through a number of ways. </p> 
+  <ul>
+    <li> With an Anchor, you can give it a link, then display that link with Anchor text <a href="#"> Like this!</a> </li>
+    <li> Anchor elements can also be used to create internal links to jump to different sections within a webpage. </li> 
+    <li> You can also use an Anchor element on an image, the image will then act like a link as well. </li> 
+    </ul>
+    <p> Here are a few examples of an Anchor element being used: </p>
+    <code>
+   &lt;p&gt; Hello, &lt;a href="#"&gt; I'm Anchor text within a paragraph element! &lt;/a&gt; &lt;/p&gt; 
+   &lt;a href="https://www.google.com" target="_blank"&gt; I open a new tab to google! &lt;/a&gt;  
+ </code>
+    <p> The output: </p>
+    <code>
+      <p> Hello, <a href="#"> I'm Anchor text within a paragraph element! </a> </p> 
+      <a href="https://www.google.com" target="_blank"> I open a new tab to google! </a>
+    </code>  
+  </article>
+    </section> 
+    
+   <section class="main-section" id="Comments">
+     <header class="main-header"> Comments </header>
+     <article>
+     <p> Comments are a great way to leave messages for other developers within your code without affecting the output to the user. Commenting is also a good to make sections of code inactive, without deleting it. </p> 
+     <code>
+     &lt;!-- This is a comment --&gt;
+     
+     &lt;!--
+       &lt;h1&gt; Hello World &lt;/h1&gt;
+       --&gt;
+       </code>
+     </article>
+    </section>  
+    
+    <section class="main-section" id="Lists">
+      <header class="main-header"> Lists </header>  
+      <article>
+      <p> There are two lists that you can create, you can create Bulleted Unordered List, or Ordered List. Lists can be useful, since they can let you organize any info you want into a list, helping the user read through content, or navigate a site. </p>
+        <p> Here is an example of a Bulleted Unordered List: </p>
+      <code>
+        &lt;ul&gt;
+          &lt;li&gt; List 1 &lt;/li&gt;
+          &lt;li&gt; List 2 &lt;/li&gt;
+          &lt;li&gt; List 3 &lt;/li&gt;
+        &lt;/ul&gt;
+        </code>  
+        <p> The outcome: </p>
+        <code>
+          <ul>
+            <li> List 1 </li>
+            <li> List 2 </li> 
+            <li> List 3 </li> 
+          </ul>
+        </code>
+        <p> Here is an example of a Ordered List: </p>
+        <code>
+          &lt;ol&gt;  
+            &lt;li&gt; List 1 &lt;/li&gt;
+            &lt;li&gt; List 2 &lt;/li&gt;
+            &lt;li&gt; List 3 &lt;/li&gt;
+          &lt;/ol&gt;
+        </code> 
+        <p> The outcome: </p>
+        <code>
+          <ol>
+            <li> List 1 </li>
+            <li> List 2 </li>
+            <li> List 3 </li>
+          </ol>
+        </code>  
+      </article>
+    </section>
+    <section class="main-section" id="Font_Style">
+      <header class="main-header"> Font Style </header>
+      <article>
+      <p> There are a few different font styles that you can do. </p>
+    <ul>
+      <li> <strong> Bold: </strong> </li>
+      </ul>
+      <p> To make a word or sentence bold you use <code> &lt;strong&gt; &lt;/strong&gt; </code> </p>
+        <p> Here is an example: </p>
+        <code>
+          &lt;strong&gt; This sentence is bold. &lt;/strong&gt; 
+        </code>
+        <p> Output: </p>
+        <code>
+          <strong> This sentence is bold. </strong>
+        </code>  
+         <ul>
+           <li><strong> Italic: </strong></li>
+        </ul>
+        <p> To make a word or sentence italic, you use </p>
+          <code>
+            &lt;i&gt; &lt;/i&gt;
+          </code>
+        <p> Here is an example: </p>
+        <code>
+          &lt;i&gt; This sentence is italic. &lt;/i&gt;
+        </code>  
+        <p> Output: </p>
+        <code>
+          <i> This sentence is italic. </i>
+        </code>
+        <ul>
+          <li> <strong>Underline:</strong> </li>
+        </ul>
+        <p> To make a word or sentence underlined, you use </p>
+        <code>
+          &lt;u&gt; &lt;/u&gt;
+        </code>
+        <p> Here is an example: </p>
+        <code>
+          &lt;u&gt; This sentence is underlined &lt;/u&gt; 
+        </code>  
+        <p> Output: </p>
+        <code>
+          <u> This sentence is underlined </u>
+        </code>
+        <ul>
+          <li> <strong>Super Script:</strong> </li>
+        </ul>
+            <p> To make a word or sentence with super script, you use </p>
+            <code>
+             &lt;sup&gt; &lt;/sup&gt;
+            </code>  
+        <p> Here is an example: </p>
+        <code>
+        &lt;p&gt; a&lt;sup&gt;2&lt;/sup&gt;+ b&lt;sup&gt;2&lt;/sup&gt;= c&lt;sup&gt;2&lt;/sup&gt; &lt;/p&gt;
+        </code>
+        <p> Output: </p>
+        <code>
+          <p> a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> </p>
+        </code>  
+        <ul>
+          <li> <strong>Subscript:</strong> </li>
+        </ul>
+        <p> To make a word or sentence with subscript, you use </p>
+        <code>
+          &lt;sub&gt; &lt;/sub&gt;
+        </code>
+        <p> Here is an example: </p>
+        <code>
+          &lt;p&gt; My favorite drink is H&lt;sub&gt;2&lt;/sub&gt;O. &lt;/p&gt;
+        </code>  
+        <p> Output: </p>
+        <code>
+          <p> My favorite drink is H<sub>2</sub>O. </p>
+        </code>  
+      </article>
+    </section>
+  
+  <section class="main-section" id="Reference">
+    <header class="main-header"> Reference </header>
+    <article>
+      <p> All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> MDN. </a> </p>
+    </article>
+  </section>
+</main>  
+</html>
